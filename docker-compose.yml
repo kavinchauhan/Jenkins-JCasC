@@ -1,0 +1,17 @@
+version: '3'
+ 
+services:
+  jenkins_web:
+    image: jenkins:jcasc
+    container_name: jenkins_container
+    ports:
+      - 9898:8080
+    restart: always
+    volumes:
+      - ./jenkins_data:/var/jenkins_home
+    environment:
+      JENKINS_ADMIN_ID: 'admin'
+      JENKINS_ADMIN_PASSWORD: 'jenkins'
+volumes:
+  jenkins_data:
+
