@@ -12,6 +12,3 @@ services:
     environment:
       JENKINS_ADMIN_ID: 'admin'
       JENKINS_ADMIN_PASSWORD: 'jenkins'
-volumes:
-  jenkins_data:
-
